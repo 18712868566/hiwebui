@@ -2,7 +2,7 @@
 * @Author: A
 * @Date:   2021-05-12 15:02:24
 * @Last Modified by:   A
-* @Last Modified time: 2021-05-13 16:42:24
+* @Last Modified time: 2021-05-19 15:44:45
 */
 .hui-lable{
     display: flex;align-items: center
@@ -26,3 +26,34 @@
     color: #000;
     text-decoration: none;
 }
+
+.hui-wrap{
+    position: relative;
+}
+
+.hui-nav{
+    float: right;
+    z-index: 9;
+    display: none;
+}
+
+.hui-nav .col-lg-8{
+    padding: 0;
+    border-radius: 5px;
+}
+
+.hui-nav-show{
+    display: block;
+}
+
+.hui-nav-hide{
+    display: none;
+}
+
+
+.hui-tab-content .btn:hover{
+    color: #313a46;
+    background-color: #e3eaef;
+    border-color: #e3eaef;
+}
+

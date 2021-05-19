@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -7,23 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
     <!-- Title -->
     <title>Hi Web Ui &amp; HERO YingXiong</title>
-
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.png">
-
     <!-- These plugins only need for the run this page -->
     <link rel="stylesheet" href="css/default-assets/morris.css">
-    <!-- tags -->
-    <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
-    <link rel="stylesheet" href="css/tags.css">
     <!-- Master Stylesheet [If you remove this CSS file, your file will be broken undoubtedly.] -->
     <link rel="stylesheet" href="style.css">
-
+    <!-- Hui -->
     <link rel="stylesheet" href="css/hui.css">
-
 </head>
 
 <body>
@@ -31,7 +24,6 @@
     <div id="preloader">
         <div class="lds-hourglass"></div>
     </div>
-
     <!-- Main Content-->
     <div class="main-container-wrapper">
         <!-- Top bar area -->
@@ -56,11 +48,12 @@
                 </button>
                 <ul class="navbar-nav mr-lg-2">
                     <li class="nav-item app-search d-none d-sm-block">
-                        <form role="search" class=""><input type="text" placeholder="Search..." class="form-control">
+                        <form role="search" class=""><input type="text" placeholder="全站搜索资源..." class="form-control">
                             <button type="submit" class="search-btn mr-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search search-icon">
                                     <circle cx="11" cy="11" r="8"></circle>
                                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                </svg></button></form>
+                                </svg></button>
+                            </form>
                     </li>
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-xl-none align-self-center" type="button" data-toggle="offcanvas">
@@ -73,7 +66,6 @@
                 </button>
             </div>
         </nav>
-
         <div class="container-fluid page-body-wrapper">
             <!-- Side Menu area -->
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -197,200 +189,217 @@
                     </li>
                 </ul>
             </nav>
-
             <!-- Mani Page -->
             <div class="main-panel">
                 <div class="content-wrapper">
+
+                    <!-- 分类导航 -->
                     <div class="container-fluid">
+                        <!-- Start page title -->
                         <div class="row">
                             <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h6>我要推荐</h6>
-                                        <h6>欢迎推荐优质项目效果资源 💰</h6>
+                                <div class="page-title-box d-flex justify-content-between mb-30">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
+                                            <li class="breadcrumb-item active">官网项目</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- 分类 title 描述 time 文件 -->
+                        <!-- end page title -->
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-xl-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="form-group row">
-                                            <div class="col-lg-3">
-                                                <label class="col-form-label">名称:</label>
+                                        <ul class="nav nav-tabs nav-bordered">
+                                            <li class="nav-item">
+                                                <a href="#diqu-b1" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                                                    发行地区
+                                                </a>
+                                            </li>
+
+                                             <li class="nav-item">
+                                                <a href="#type-b1" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                                    时间线
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content hui-tab-content">
+                                            <div class="tab-pane show active" id="diqu-b1">
+                                                <button type="button" class="btn btn-link btn-rounded">日本</button>
+                                                <button type="button" class="btn btn-link btn-rounded">韩国</button>
+                                                <button type="button" class="btn btn-link btn-rounded">繁体</button>
+                                                <button type="button" class="btn btn-link btn-rounded">国内</button>
                                             </div>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" maxlength="25" name="defaultconfig-2" id="defaultconfig-2" id="exampleInputName1" placeholder="网站、文章等资源名，最多 25 字">
+
+                                            <div class="tab-pane" id="type-b1">
+                                                <button type="button" class="btn btn-link btn-rounded">2015</button>
+                                                <button type="button" class="btn btn-link btn-rounded">2016</button>
+                                                <button type="button" class="btn btn-link btn-rounded">2017</button>
+                                                <button type="button" class="btn btn-link btn-rounded">2018</button>
+                                                <button type="button" class="btn btn-link btn-rounded">2019</button>
+                                                <button type="button" class="btn btn-link btn-rounded">2020</button>
+                                                <button type="button" class="btn btn-link btn-rounded">2021</button>
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
-                                            <div class="col-lg-3">
-                                                <label class="col-form-label">链接:</label>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <input id="curl" class="form-control" type="url" name="url" placeholder="便于找到资源的网址，http(s) 开头">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row hui-wrap">
-                                            <div class="col-lg-3">
-                                                <label class="col-form-label">分类:</label>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" value="" placeholder="选择所属分类" id="categories">
-                                            </div>
-
-                                            <div class="col-lg-3 offset-lg-3 row col-lg-8 hui-nav">
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <ul class="nav nav-tabs nav-bordered">
-                                                            <li class="nav-item">
-                                                                <a href="#hot-b1" data-toggle="tab" aria-expanded="true" class="nav-link active">
-                                                                    常用分类
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a href="#type-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                                                                    游戏类型
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a href="#diqu-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                                                                    发行地区
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a href="#gametype-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                                                                    游戏平台
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a href="#elements-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                                                                    页面组件
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a href="#projects-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                                                                    海外项目总览
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="tab-content hui-tab-content">
-                                                            <div class="tab-pane show active" id="hot-b1">
-                                                                <button type="button" class="btn btn-rounded">优选效果</button>
-                                                                <button type="button" class="btn btn-rounded">移动效果</button>
-                                                                <button type="button" class="btn btn-rounded">pc效果</button>
-                                                            </div>
-                                                            <div class="tab-pane show" id="type-b1">
-                                                                <button type="button" class="btn btn-rounded">休闲益智</button>
-                                                                <button type="button" class="btn btn-rounded">动作游戏</button>
-                                                                <button type="button" class="btn btn-rounded">独立游戏</button>
-                                                                <button type="button" class="btn btn-rounded">策略塔防</button>
-                                                                <button type="button" class="btn btn-rounded">射击游戏</button>
-                                                                <button type="button" class="btn btn-rounded">模拟经营</button>
-                                                                <button type="button" class="btn btn-rounded">冒险游戏</button>
-                                                                <button type="button" class="btn btn-rounded">街机格斗</button>
-                                                                <button type="button" class="btn btn-rounded">恋爱养成</button>
-                                                                <button type="button" class="btn btn-rounded">文字游戏</button>
-                                                                <button type="button" class="btn btn-rounded">棋牌桌面</button>
-                                                                <button type="button" class="btn btn-rounded">音乐游戏</button>
-                                                                <button type="button" class="btn btn-rounded">体育竞技</button>
-                                                                <button type="button" class="btn btn-rounded">卡牌游戏</button>
-                                                                <button type="button" class="btn btn-rounded">家庭养成</button>
-                                                                <button type="button" class="btn btn-rounded">角色扮演</button>
-                                                            </div>
-                                                            <div class="tab-pane" id="diqu-b1">
-                                                                <button type="button" class="btn btn-rounded">日本</button>
-                                                                <button type="button" class="btn btn-rounded">韩国</button>
-                                                                <button type="button" class="btn btn-rounded">繁体</button>
-                                                                <button type="button" class="btn btn-rounded">国内</button>
-                                                            </div>
-                                                            <div class="tab-pane" id="gametype-b1">
-                                                                <button type="button" class="btn btn-rounded">PS4</button>
-                                                                <button type="button" class="btn btn-rounded">Xbox</button>
-                                                                <button type="button" class="btn btn-rounded">Switch</button>
-                                                                <button type="button" class="btn btn-rounded">PC</button>
-                                                                <button type="button" class="btn btn-rounded">Phone</button>
-                                                            </div>
-                                                            <div class="tab-pane" id="elements-b1">
-                                                                <button type="button" class="btn btn-rounded">音频和视频</button>
-                                                                <button type="button" class="btn btn-rounded">页面布局</button>
-                                                                <button type="button" class="btn btn-rounded">背景处理</button>
-                                                                <button type="button" class="btn btn-rounded">字体排版</button>
-                                                                <button type="button" class="btn btn-rounded">鼠标滑过</button>
-                                                                <button type="button" class="btn btn-rounded">按钮效果</button>
-                                                                <button type="button" class="btn btn-rounded">滚动效果</button>
-                                                                <button type="button" class="btn btn-rounded">下拉菜单</button>
-                                                                <button type="button" class="btn btn-rounded">弹出层</button>
-                                                                <button type="button" class="btn btn-rounded">进度条</button>
-                                                                <button type="button" class="btn btn-rounded">滚动条</button>
-                                                                <button type="button" class="btn btn-rounded">轮播图</button>
-                                                                <button type="button" class="btn btn-rounded">统计图</button>
-                                                                <button type="button" class="btn btn-rounded">Tabs</button>
-                                                                <button type="button" class="btn btn-rounded">提示</button>
-                                                                <button type="button" class="btn btn-rounded">图片</button>
-                                                                <button type="button" class="btn btn-rounded">加载</button>
-                                                                <button type="button" class="btn btn-rounded">表单</button>
-                                                                <button type="button" class="btn btn-rounded">表格</button>
-                                                            </div>
-                                                            <div class="tab-pane" id="projects-b1">
-                                                                <button type="button" class="btn">官网项目</button>
-                                                                <button type="button" class="btn">活动专题</button>
-                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div> <!-- end card-->
-                                            </div>
-                                        </div>
-
-
-
-                                        <!-- <div class="form-group row">
-                                            <div class="col-lg-3">
-                                                <label class="col-form-label">分类:</label>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" value="" data-role="tagsinput" id="tagsinput">
-                                            </div>
-                                        </div> -->
-
-                                        <div class="form-group row">
-                                            <div class="col-lg-3">
-                                                <label class="col-form-label">缩略图:</label>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <input type="file" name="img[]" class="file-upload-default">
-                                                <div class="input-group col-xs-12">
-                                                    <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Image">
-                                                    <span class="input-group-append">
-                                                        <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <div class="col-lg-3">
-                                                <label class="col-form-label">详情:</label>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <textarea class="form-control" id="exampleTextarea1" rows="4" placeholder="用一句话简单介绍资源，最多 80 字,详细介绍该资源的主要亮点,使用场景"></textarea>
-                                            </div>
-                                        </div>
-
-                                        <button type="submit" class="btn btn-primary mr-2">提交</button>
-                                        <button class="btn btn-light">预览</button>
                                     </div>
-                                </div>
-                            </div>
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
                         </div>
                     </div>
-                </div>
 
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- <h4 class="my-4 card-title">分类名</h4> -->
+                                <div class="card-deck-wrapper">
+                                    <div class="card-deck">
+                                        <div class="card mb-30">
+                                            <a href="" target="_blank">
+                                                <img class="card-img-top img-fluid" src="img/gallery-img/7.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title mb-10">标题标题</h5>
+                                                    <p class="card-text">详细描述</p>
+                                                    <p class="card-text">
+                                                        <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card mb-30">
+                                            <a href="" target="_blank">
+                                                <img class="card-img-top img-fluid" src="img/gallery-img/7.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title mb-10">标题标题</h5>
+                                                    <p class="card-text">详细描述</p>
+                                                    <p class="card-text">
+                                                        <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card mb-30">
+                                            <a href="" target="_blank">
+                                                <img class="card-img-top img-fluid" src="img/gallery-img/7.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title mb-10">标题标题</h5>
+                                                    <p class="card-text">详细描述</p>
+                                                    <p class="card-text">
+                                                        <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card mb-30">
+                                            <a href="" target="_blank">
+                                                <img class="card-img-top img-fluid" src="img/gallery-img/7.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title mb-10">标题标题</h5>
+                                                    <p class="card-text">详细描述</p>
+                                                    <p class="card-text">
+                                                        <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card mb-30">
+                                            <a href="" target="_blank">
+                                                <img class="card-img-top img-fluid" src="img/gallery-img/7.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title mb-10">标题标题</h5>
+                                                    <p class="card-text">详细描述</p>
+                                                    <p class="card-text">
+                                                        <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div> <!-- end card-deck-->
+                                </div> <!-- end card-deck-wrapper-->
+                            </div> <!-- end col-->
+                            <div class="col-12">
+                                <!-- <h4 class="my-4 card-title">分类名</h4> -->
+                                <div class="card-deck-wrapper">
+                                    <div class="card-deck">
+                                        <div class="card mb-30">
+                                            <img class="card-img-top img-fluid" src="img/gallery-img/7.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-10">标题标题</h5>
+                                                <p class="card-text">详细描述</p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-30">
+                                            <img class="card-img-top img-fluid" src="img/gallery-img/7.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-10">标题标题</h5>
+                                                <p class="card-text">详细描述</p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-30">
+                                            <img class="card-img-top img-fluid" src="img/gallery-img/6.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-10">标题标题</h5>
+                                                <p class="card-text">详细描述</p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-30">
+                                            <img class="card-img-top img-fluid" src="img/gallery-img/5.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-10">标题标题</h5>
+                                                <p class="card-text">详细描述</p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-30">
+                                            <img class="card-img-top img-fluid" src="img/gallery-img/5.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-10">标题标题</h5>
+                                                <p class="card-text">详细描述</p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">上传时间 yy-dd-mm</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end card-deck-->
+                                </div> <!-- end card-deck-wrapper-->
+                            </div> <!-- end col-->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- 分页 -->
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <nav>
+                               <ul class="pagination pagination-flat flex-wrap justify-content-end">
+                                    <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-left"></i></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
                 <!-- Footer Area -->
                 <div class="footer-area footer">
                     <div class="container-fluid">
@@ -412,14 +421,12 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- ======================================
     ********* Page Wrapper Area End ***********
     ======================================= -->
-
     <!-- Must needed plugins to the run this Template -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -427,28 +434,19 @@
     <script src="js/bundle.js"></script>
     <script src="js/vivus.min.js"></script>
     <script src="js/svg.animation.js"></script>
-
     <!-- Inject JS -->
     <script src="js/canvas.js"></script>
     <script src="js/collapse.js"></script>
     <script src="js/settings.js"></script>
     <!-- <script src="js/template.js"></script> -->
     <script src="js/default-assets/active.js"></script>
-
     <!-- These plugins only need for the run this page -->
-    <script src="js/default-assets/file-upload.js"></script>
-    <script src="js/default-assets/basic-form.js"></script>
-
-
-    <!-- These plugins only need for the run this page -->
-    <script src="js/default-assets/jquery.validate.min.js"></script>
-    <script src="js/default-assets/bootstrap-maxlength.min.js"></script>
-    <script src="js/default-assets/form-validation-custom.js"></script>
-    <script src="js/default-assets/bootstrap-maxlength-active.js"></script>
-
-
-    <!-- <script src="js/bootstrap-tagsinput.min.js"></script> -->
-    <script src="js/hui.js"></script>
+    <script src="js/default-assets/jquery.flot.js"></script>
+    <script src="js/default-assets/jquery.flot.resize.js"></script>
+    <script src="js/default-assets/sparkline.min.js"></script>
+    <script src="js/default-assets/jquery.knob.js"></script>
+    <script src="js/default-assets/jquery.appear.js"></script>
+    <script src="js/default-assets/knob-active.js"></script>
 </body>
 
 </html>
